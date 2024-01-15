@@ -1,0 +1,657 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(7, 7, 7, 0.158);
+}
+
+.inicio {
+    color: #ffbb00;
+}
+
+.contenedor-imagen {
+    margin: 0px; /* Espaciado entre las imágenes */
+}
+
+.imagen {
+    max-width: 900px; /* Ancho máximo deseado para las imágenes */
+    position: absolute;
+    right: 0%;           /* Alinear a la derecha */
+    left: 2%;            /* Alinear a la izquierda */
+    top: 25%;          /* Alinear arriba */
+    bottom: 0;          /* Alinear abajo */
+}
+
+.imagen-1 {
+    max-width: 900px; /* Ancho máximo deseado para las imágenes */
+    position: absolute;
+    right: 0%;           /* Alinear a la derecha */
+    left: 50%;            /* Alinear a la izquierda */
+    top: 25%;          /* Alinear arriba */
+    bottom: 10;          /* Alinear abajo */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.brand {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #333;
+}
+
+.brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.brand p {
+    background-color: #3b3b3b;
+    color: aliceblue;
+    margin: -0px;
+}
+
+.slider-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.slider img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-button {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.comentario {
+    margin-bottom: 10px;
+}
+
+/* Agrega más estilos según tus preferencias */
+
+/* Estilos para el menú en la parte superior */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para el contenido de las secciones */
+section {
+    padding: 20px;
+}
+
+   /*-- --------------------------------boton enviar---------------------------------- */
+
+   .enviar {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+  button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  button:hover svg {
+    transform: rotate(45deg);
+  }
+  
+  
+
+
+   /*-- --------------------------------deslizador-fotos---------------------------------- */
+
+
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+        max-width: 100%;
+        height: 600px;
+        border-radius: 10px;
+        max-height: 2000px; /* Ajusta este valor según sea necesario */
+}
+
+/* Controles de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+   /*-- --------------------------------coches-venta---------------------------------- */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.viñetas-container {
+    display: flex;
+}
+
+.viñeta {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.viñeta:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.viñeta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    max-height: 2000px; /* Ajusta este valor según sea necesario */
+}
+
+.viñeta h3 {
+    margin-top: 5px;
+}
+
+.viñeta p {
+    margin-top: 5px;
+    color: #2e4c5e;
+}
+
+.column {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+
+
+   /*-- --------------------------------circulo-animado---------------------------------- */
+
+   .spinner {
+    background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
+    width: 100px;
+    height: 100px;
+    animation: spinning82341 1.7s linear infinite;
+    text-align: center;
+    border-radius: 50px;
+    filter: blur(1px);
+    box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+  }
+  
+  .spinner1 {
+    background-color: rgb(36, 36, 36);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    filter: blur(10px);
+  }
+  
+  @keyframes spinning82341 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+     /*-- --------------------------------boton-audi-volvo--------------------------------- */
+
+
+     .button {
+        --black: #000000;
+        --ch-black: #141414;
+        --eer-black: #1b1b1b;
+        --night-rider: #2e2e2e;
+        --white: #ffffff;
+        --af-white: #f3f3f3;
+        --ch-white: #e1e1e1;
+        border-radius: 8px;
+        width: 140px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0px 15px;
+        border: none;
+        color: white;
+        position: relative;
+        cursor: pointer;
+        font-weight: 700;
+        transition-duration: .2s;
+        background-color: var(--ch-black);
+      }
+      
+      .button:before, .button:after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        border-radius: 10px;
+        background: linear-gradient(45deg, 
+        var(--ch-black), var(--eer-black),
+        var(--night-rider), var(--ch-white), var(--night-rider), 
+          var(--eer-black), var(--ch-black),var(--ch-black));
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: steam 20s linear infinite;
+      }
+      
+      @keyframes steam {
+        0% {
+          background-position: 0 0;
+        }
+      
+        50% {
+          background-position: 400% 0;
+        }
+      
+        100% {
+          background-position: 0 0;
+        }
+      }
+      
+      .button:after {
+        filter: blur(50px);
+      }
+      
+      
+
+
+
+     /*-- --------------------------------tienda--inicio---------------------------------- */
+
+     .botton {
+        width: 650px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0px 15px;
+        background-color: red;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        position: relative;
+        cursor: pointer;
+        font-weight: 900;
+        transition-duration: .2s;
+        background: linear-gradient(0deg, #2f2f2f, #272727);
+        font-family: "Bodoni MT Black", serif;
+      }
+      
+      .botton:before, .botton:after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        border-radius: 10px;
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+              #0000ff, #00ff00,#ffff00, #ff0000);
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: steam 20s linear infinite;
+      }
+      
+      @keyframes steam {
+        0% {
+          background-position: 0 0;
+        }
+      
+        50% {
+          background-position: 400% 0;
+        }
+      
+        100% {
+          background-position: 0 0;
+        }
+      }
+      
+      .botton:after {
+        filter: blur(50px);
+      }
+      
+      
+     /*-- ------------------------------volver-arriba--------------------------------- */
+
+
+      
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+.compra-coches {                    /*letra compra tienda Audi*/
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+
+
+
+     /*-- -------------------------------estrellas-comentarios---------------------------------- */
+
+
+
+
+.rating {
+  display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+.rating:not(:checked) > input {
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+     /*-- -------------------------------tamaño comentarios-------------------------------- */
+
+     .campo-texto {
+      width: 900px;
+      height: 30px;
+      margin: 10px;
+  }
+
+  .area-texto {
+      width: 900px;
+      height: 100px;
+  }
+
+
+     /*-- -------------------------------suscribirse-------------------------------- */
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .input {
+    min-height: 38px;
+    max-width: 150px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+  }
+  
+  .button--submit {
+    min-height: 40px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #5e5dcd;
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
+
+
+     /*-- -------------------------------boton resetear------------------------------- */
+
+
+ .reset button {
+    --bg: #e74c3c;
+    --text-color: #fff;
+    position: relative;
+    width: 100px;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 0px;
+    box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+  }
+  
+  .reset button:hover {
+    opacity: 1;
+  }
+  
+  .reset button:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+  }

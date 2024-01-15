@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="coches-audi-volvo.css">
+    <script src="coches-audi-volvo.js" defer></script>
+
+    <title>
+        Audi-Volvo
+    </title>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a onclick="window.location.href='coches-audi-1.html';">Audi</a></li>
+                <li><a onclick="window.location.href='coches-volvo-1.html';">Volvo</a></li>
+                <li><a onclick="window.location.href='coches-audi-volvo.html';">Menú Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
+</head>
+<body>
+    <body>
+        <div class="documento">
+            <h1>Mi Tienda de Objetos</h1>
+            <div class="viñetas-container" id="viñetas-container">
+                <div class="viñeta actual">
+                    <img src="audi-etron-gt-cara.jpg" alt="Objeto 1">
+                    <h3>Objeto 1</h3>
+                    <p>Precio: $XX</p>
+                </div>
+                <div class="viñeta">
+                    <img src="audi-etron-gt-rs-interior.jpg" alt="Objeto 2">
+                    <h3>Objeto 2</h3>
+                    <p>Precio: $YY</p>
+                </div>
+                <!-- Repite las viñetas para otros objetos -->
+            </div>
+            <div class="flecha izquierda" onclick="cambiarViñeta(-1)">&#9665;</div>
+            <div class="flecha derecha" onclick="cambiarViñeta(1)">&#9655;</div>
+            <!-- Agrega más imágenes según sea necesario -->
+    
+            <!-- Controles de navegación -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <p>Audi es una marca de coches alemana conocida por su diseño y tecnología innovadora.</p>
+
+        </div>
+    </body>
+</head>
+<body>
+        <center>
+<h1>Tienda de subenirs de Audi<h1>
+<div class="viñetas-container">
+    <div class="column">
+        <div class="viñeta" onclick="window.location.href='comprar_coche_audi.html';">
+            <img src="audi-etron-gt-cara.jpg" alt="Audi Modelo">
+            <h3>Audi Modelo 2023</h3>
+            <p>$50,000</p>
+        </div>
+        <div class="viñeta" onclick="window.location.href='comprar_coche_volvo.html';">
+            <img src="Audi_e-tron_GT_culo.jpg" alt="Volvo Modelo">
+            <h3>Volvo Modelo XC</h3>
+            <p>$45,000</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="viñeta" onclick="window.location.href='comprar_coche_otro.html';">
+            <img src="audi-etron-gt-rs-interior.jpg" alt="Otro Modelo">
+            <h3>Otro Modelo</h3>
+            <p>$55,000</p>
+        </div>
+        <div class="viñeta" onclick="window.location.href='comprar_coche_otro_mas.html';">
+            <img src="audi-etron-gt-cara.jpg" alt="Otro Más Modelo">
+            <h3>Otro Más Modelo</h3>
+            <p>$60,000</p>
+        </div>
+    </div>
+    
+</div>
+</div>
+</center>
+    <script>
+        document.querySelectorAll(".nav-button").forEach((button) => {
+            button.addEventListener("click", function () {
+                const slider = this.parentNode.querySelector(".slider");
+                const direction = this.classList.contains("next") ? 1 : -1;
+                const offset = 100;
+                const currentOffset = parseInt(slider.style.transform.replace(/[^0-9\-]/g, ""));
+                slider.style.transform = `translateX(${currentOffset + offset * direction}%)`;
+            });
+        });
+    </script>
+<style>
+    /* Establece el video como fondo */
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1; /* Coloca el video detrás del contenido */
+    }
+
+    /* Estilos para el contenido */
+    .content {
+        text-align: center;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para mayor legibilidad */
+    }
+</style>
+</head>
+<body>
+<!-- Video de fondo -->
+<video autoplay muted loop>
+    <source src="fondo-blanco.mp4" type="video/mp4">
+</video>
+
+<!-- Contenido de la página -->
+<div class="content">
+    <head>
+        <title>Comentarios</title>
+    </head>
+    <body>
+        <center>
+        <h1>Comentarios</h1>
+    
+        <div id="comentarios">
+            <!-- Aquí se mostrarán los comentarios -->
+        </div>
+    
+        <form id="formulario">
+            <input type="text" id="nombre" placeholder="Tu nombre" required><br>
+            <textarea id="mensaje" placeholder="Escribe tu comentario" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    
+        <script src="comentarios.js"></script>
+    </center>
+    </body>
+    </html>
+</div>
+</body>
+</html>

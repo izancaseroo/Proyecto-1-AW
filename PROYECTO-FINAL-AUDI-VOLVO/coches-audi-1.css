@@ -1,0 +1,226 @@
+/* Reset de estilos para el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Estilo para el encabezado */
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilo para la navegación */
+nav ul {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para las secciones */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    color: #666;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+    /*-- --------------------------------deslizador-fotos---------------------------------- */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Controles de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+ /*-- --------------------------------boton-shop-now---------------------------------- */
+
+
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.compra-coches {                    /*letra compra tienda Audi*/
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+   /*-- --------------------------------coches-venta---------------------------------- */
+
+
+
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.viñetas-container {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+.viñeta {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.viñeta:hover {
+    background-color: rgb(105, 105, 105);
+    border-radius: 10px;
+
+}
+
+.viñeta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    max-height: 200px; /* Ajusta este valor según sea necesario */
+}
+
+.viñeta h3 {
+    margin-top: 5px;
+}
+
+.viñeta p {
+    margin-top: 5px;
+    color: #2e4c5e;
+}
+
+.column {
+    width: 50%;
+    box-sizing: border-box;
+}
